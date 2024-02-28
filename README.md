@@ -2,7 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, add the `NEXT_PUBLIC_BUILDER_API_KEY` env variable to your `.env.local` file. You can get the value from the [Builder.io](https://builder.io/) dashboard.
+
+Then, run the development server:
 
 ```bash
 npm run dev
