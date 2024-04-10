@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@builder.io/sdk-react-nextjs':
-    specifier: ^0.14.4
-    version: 0.14.4(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.14.12
+    version: 0.14.12(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: 14.1.0
     version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -66,8 +66,8 @@ packages:
       regenerator-runtime: 0.14.1
     dev: true
 
-  /@builder.io/sdk-react-nextjs@0.14.4(next@14.1.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-RwT7XEZxH0tOcv09uXVhz/UdJXqswPV1cWbpbnuiCpQ2owLuS/OKSQb6v/bMVBwNcD/LwgZSu2ygwfd3r5Iw8A==}
+  /@builder.io/sdk-react-nextjs@0.14.12(next@14.1.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-S6IWTLPp+cFxSRESBJP+cGhlIilRKbLSCAkd5LX4K1UA4FO/wCPUz+/UO3kvQdm6sZwibPRIPNOcA0xc5w3atQ==}
     peerDependencies:
       next: '>=13.4.20'
       react: ^18.2.0

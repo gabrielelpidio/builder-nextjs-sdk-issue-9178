@@ -3,7 +3,7 @@ import {
   fetchOneEntry,
   getBuilderSearchParams,
 } from "@builder.io/sdk-react-nextjs";
-import { tabsWithInfo } from "@/components/test.info";
+import { tabsWithInfoClient, tabsWithInfo } from "@/components/test.info";
 
 interface MyPageProps {
   params: {
@@ -30,7 +30,7 @@ export default async function Page(props: MyPageProps) {
       apiVersion="v3"
       apiKey={apiKey}
       content={content}
-      customComponents={[tabsWithInfo]}
+      customComponents={[tabsWithInfoClient, tabsWithInfo]}
       model="page"
     />
   );

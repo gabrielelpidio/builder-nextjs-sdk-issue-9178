@@ -7,6 +7,7 @@ import { Blocks } from "@builder.io/sdk-react-nextjs";
 type Props = {
   builderBlock: BuilderBlock;
   tabs?: { label: string; content: BuilderBlock[] }[];
+  externalContent?: BuilderBlock[];
   builderContext: ComponentProps<typeof Blocks>["context"] & {
     componentInfos: Record<string, any>;
   };
@@ -16,7 +17,7 @@ export function Tabs(props: Props) {
   console.log("props", props);
 
   return (
-    <>
+    <div>
       <div
         className="flex-col p-2 bg-red-300"
         style={{
@@ -44,20 +45,6 @@ export function Tabs(props: Props) {
           ))}
         </div>
       </div>
-      {props.tabs?.length && props.tabs.length > 0 ? (
-        <div className="bg-blue-300 p-2">
-          <span className="block">
-            {"Content container " + props.tabs[activeTab].label}
-          </span>
-          <Blocks
-            blocks={props.tabs[activeTab].content}
-            parent={props.builderBlock.id}
-            path={`component.options.tabs.${activeTab}.content`}
-            context={props.builderContext}
-            registeredComponents={props.builderContext?.componentInfos}
-          />
-        </div>
-      ) : null}
-    </>
+    </div>
   );
 }
